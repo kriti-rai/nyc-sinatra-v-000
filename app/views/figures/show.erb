@@ -6,6 +6,19 @@
 <%end%>
 
 <h4>Landmarks:</h4>
-<%@landmarks.each do |landmark|%>
+
 <p><%=landmark.name%></p>
-<%end%>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Year Completed</th>
+  </tr>
+  <%@landmarks.each do |landmark|%>
+  <tr>
+    <td><%= landmark.name %></td>
+    <td> - <%= landmark.year_completed %></td>
+  </tr>
+  <%end%>
+<table>
