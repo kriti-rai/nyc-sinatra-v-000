@@ -5,16 +5,6 @@
 <p><%=title.name%></p>
 <%end%>
 
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Year Completed</th>
-  </tr>
-  <%@landmarks.each do |landmark|%>
-  <tr>
-    <td><%= landmark.name %></td>
-    <td> - <%= landmark.year_completed %></td>
-  </tr>
-<table>
+<%@landmarks.each do |landmark|%>
+  <p><%= landmark.name %> - <%= landmark.year_completed %></p>
 <%end%>
